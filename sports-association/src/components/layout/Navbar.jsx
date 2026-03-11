@@ -8,8 +8,10 @@ const NAV_LINKS = [
   { name: 'About Us', path: '/about' },
   { name: 'Sports', path: '/sports' },
   { name: 'Events', path: '/events' },
-  { name: 'Registration', path: '/registration' },
+  // { name: 'Registration', path: '/registration' },
+  { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' },
+
 ];
 
 export default function Navbar() {
@@ -67,7 +69,7 @@ export default function Navbar() {
               );
             })}
             <div className="pl-4">
-              <Link to="/registration" className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 inline-block">
+              <Link to="/contact" className="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 inline-block">
                 Join Now
               </Link>
             </div>
@@ -103,7 +105,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 pb-2">
-                <Link to="/registration" className="block w-full text-center bg-gradient-to-r from-primary to-secondary text-white px-5 py-3 rounded-lg font-semibold shadow-md">
+                <Link to="/contact" className="block w-full text-center bg-gradient-to-r from-primary to-secondary text-white px-5 py-3 rounded-lg font-semibold shadow-md">
                   Join Now
                 </Link>
               </div>

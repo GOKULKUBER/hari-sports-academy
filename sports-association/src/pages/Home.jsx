@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Users, Trophy, ChevronRight } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Trophy, ChevronRight, GalleryThumbnails } from 'lucide-react';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -44,7 +44,7 @@ export default function Home() {
               Join the Hari sports academy dedicated to athletic development, elite competition, and community engagement.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link to="/registration" className="bg-secondary/85 hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg shadow-secondary/30 hover:-translate-y-1">
+              <Link to="/contact" className="bg-secondary/85 hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg shadow-secondary/30 hover:-translate-y-1">
                 Register Now <ArrowRight className="w-5 h-5" />
               </Link>
               <Link to="/events" className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 hover:-translate-y-1">
@@ -66,9 +66,9 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {[
-              { icon: Users, title: 'Become a Member', desc: 'Join our community of athletes, clubs, and coaches.', link: '/membership' },
+              { icon: Users, title: 'Become a Member', desc: 'Join our community of athletes, clubs, and coaches.', link: '/contact' },
               { icon: Calendar, title: 'Upcoming Events', desc: 'Discover and register for the latest tournaments.', link: '/events' },
-              { icon: Trophy, title: 'Results & Rankings', desc: 'Track performance and view official leaderboards.', link: '/results' },
+              { icon: GalleryThumbnails, title: 'Gallery', desc: 'Track images and official photos.', link: '/results' },
             ].map((item, idx) => (
               <motion.div key={idx} variants={fadeIn} className="group p-8 rounded-3xl bg-gray-100 border border-gray-100 hover:bg-gray-150  hover:shadow-xl transition-all duration-300">
                 <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all">

@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {['Registration', 'Coaches', 'Sponsors'].map(item => (
                 <li key={item}>
-                  <Link to={`/${item.toLowerCase()}`} className="text-gray-400 hover:text-secondary transition-colors text-sm flex items-center before:content-['>'] before:mr-2 before:text-secondary before:font-bold">
+                  <Link to={item === 'Registration' ? '/contact' : `/${item.toLowerCase()}`} className="text-gray-400 hover:text-secondary transition-colors text-sm flex items-center before:content-['>'] before:mr-2 before:text-secondary before:font-bold">
                     {item}
                   </Link>
                 </li>
