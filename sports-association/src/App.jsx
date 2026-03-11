@@ -15,6 +15,7 @@ import Coaches from './pages/Coaches';
 import Downloads from './pages/Downloads';
 import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
+import Developer from './pages/Developer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="downloads" element={<Downloads />} />
           <Route path="sponsors" element={<Sponsors />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="developer" element={<Developer />} />
         </Route>
       </Routes>
     </Router>

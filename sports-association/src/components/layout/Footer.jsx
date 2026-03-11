@@ -55,7 +55,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Resources</h3>
             <ul className="space-y-3">
-              {['Registration', 'Coaches', 'Sponsors'].map(item => (
+              {['Registration', 'Coaches', 'Sponsors', 'Developer'].map(item => (
                 <li key={item}>
                   <Link to={item === 'Registration' ? '/contact' : `/${item.toLowerCase()}`} className="text-gray-400 hover:text-secondary transition-colors text-sm flex items-center before:content-['>'] before:mr-2 before:text-secondary before:font-bold">
                     {item}
