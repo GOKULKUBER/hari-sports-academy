@@ -22,18 +22,18 @@ export default function Footer() {
               Empowering athletes, organizing premier events, and fostering a community of sports excellence since 2021.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
+              <a href="https://www.facebook.com/profile.php?id=61572327843719&mibextid=ZbWKwL" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
+              </a> */}
+              <a href="https://www.instagram.com/hari_sports_academy?igsh=MTF0ZzcyenVjMXpqbA==" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
                 <Youtube className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 

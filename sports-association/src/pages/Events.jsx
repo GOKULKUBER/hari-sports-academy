@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 import { Calendar as CalendarIcon, MapPin, Clock, ArrowRight, Filter } from 'lucide-react';
 
 const EVENTS = [
-  { id: 1, title: 'National Summer Games', date: 'Aug 15 - 20, 2024', time: '09:00 AM', location: 'Metropolis Arena', locationUrl: 'https://maps.google.com/?q=Metropolis+Arena', category: 'Tournament', image: 'https://images.unsplash.com/photo-1526676037777-05a232554f77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-  { id: 2, title: 'Youth Football Clinic', date: 'Sep 05, 2024', time: '10:00 AM', location: 'City Stadium', locationUrl: 'https://maps.google.com/?q=City+Stadium', category: 'Training', image: 'https://images.unsplash.com/photo-1587329310686-91414b8e3cb7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-  { id: 3, title: 'Regional Basketball Finals', date: 'Sep 22, 2024', time: '06:00 PM', location: 'Downtown Sports Complex', locationUrl: 'https://maps.google.com/?q=Downtown+Sports+Complex', category: 'Match', image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-  { id: 4, title: 'Marathon 2024 Open', date: 'Oct 10, 2024', time: '06:00 AM', location: 'City Center Park', locationUrl: 'https://maps.google.com/?q=City+Center+Park', category: 'Tournament', image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+  // { id: 2, title: 'Youth Football Clinic', date: 'Sep 05, 2024', time: '10:00 AM', location: 'City Stadium', locationUrl: 'https://maps.google.com/?q=City+Stadium', category: 'Training', image: 'https://images.unsplash.com/photo-1587329310686-91414b8e3cb7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+  // { id: 3, title: 'Regional Basketball Finals', date: 'Sep 22, 2024', time: '06:00 PM', location: 'Downtown Sports Complex', locationUrl: 'https://maps.google.com/?q=Downtown+Sports+Complex', category: 'Match', image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+  { id: 4, title: 'Karate', date: 'mar 22, 2026', time: '08:00 AM - 05:00 PM', location: 'Pistons Yard Turf', locationUrl: 'https://www.google.com/maps/place/Pistons+Yard+Turf/@11.8039639,77.8253023,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba95398fea57a2b:0x46f100dd464d9a28!8m2!3d11.8039639!4d77.8253023!16s%2Fg%2F11vz8yd8m4?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D', category: 'Tournament', image: 'https://plus.unsplash.com/premium_photo-1683120902370-0431903fb8b5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
 ];
 
 export default function Events() {
