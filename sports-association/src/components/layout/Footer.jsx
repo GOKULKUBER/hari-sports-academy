@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Empowering athletes, organizing premier events, and fostering a community of sports excellence since 1995.
+              Empowering athletes, organizing premier events, and fostering a community of sports excellence since 2021.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="text-gray-400 hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-secondary">
@@ -71,15 +71,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start text-gray-400 text-sm">
                 <MapPin className="h-5 w-5 mr-3 text-secondary shrink-0 mt-0.5" />
-                <span>123 Sports Avenue, Athletic District<br />Metropolis, NY 10001</span>
+                <span>Nangavalli to Mettur Main Road,
+                  Eshwaran Kovil Back Side,
+                  NANGAVALLI - 636 454</span>
               </li>
               <li className="flex items-center text-gray-400 text-sm">
                 <Phone className="h-5 w-5 mr-3 text-secondary shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 93428 20133</span>
               </li>
               <li className="flex items-center text-gray-400 text-sm">
                 <Mail className="h-5 w-5 mr-3 text-secondary shrink-0" />
-                <span>info@sportsassoc.org</span>
+                <span>harisportsacademy@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -87,7 +89,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Sports Association. All rights reserved.
+            &copy; {new Date().getFullYear()} Hari Sports Academy. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>

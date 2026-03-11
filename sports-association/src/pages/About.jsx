@@ -127,7 +127,7 @@ export default function About() {
               className="w-full md:w-2/3 md:pl-10"
             >
               <Award className="w-12 h-12 text-secondary mb-6 opacity-80" />
-              <h2 className="text-4xl font-heading font-bold mb-6">A Message from the President</h2>
+              <h2 className="text-4xl font-heading font-bold mb-6">A Message from the Founder</h2>
               <blockquote className="text-xl leading-relaxed text-gray-300 italic mb-8 relative">
                 <span className="text-6xl text-primary absolute -top-8 -left-6 opacity-50 font-serif">"</span>
                 Sport has the unique power to unite, inspire, and transform lives. Our academy remains steadfast in its commitment to providing a platform where every athlete can discover their potential and achieve greatness. Together, we are building not just athletes, but leaders of tomorrow.

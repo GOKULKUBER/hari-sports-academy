@@ -25,6 +25,60 @@ const sportsData = [
     image: '/assets/sports/image1.jpg',
     description: 'An umbrella term for a class of indigenous martial arts from the Indonesian archipelago. Pencak Silat involves fluid, dance-like movements combined with devastating strikes, joint manipulation, throws, and the use of traditional weaponry.',
     features: ['Fluid Weaponry', 'Joint Manipulations', 'Cultural Heritage']
+  },
+  {
+    title: 'Thai Boxing (Muay Thai)',
+    image: '/assets/sports/image5.png',
+    description: 'Known as the "art of eight limbs," Muay Thai is a combat sport from Thailand that uses stand-up striking along with various clinching techniques. It is characterized by the combined use of fists, elbows, knees, and shins.',
+    features: ['Striking Power', 'Clinch Work', 'Full-Body Conditioning']
+  },
+  {
+    title: 'Silambam',
+    image: '/assets/sports/image6.png',
+    description: 'A traditional weapon-based martial art from Tamil Nadu, India. Silambam primarily uses a bamboo staff and incorporates fluid bodily movements, footwork, and precise striking techniques to build agility and defensive skills.',
+    features: ['Weapon Mastery', 'Agility & Footwork', 'Traditional Art']
+  },
+  {
+    title: 'Yoga',
+    image: '/assets/sports/image7.png',
+    description: 'An ancient practice that brings together mind and body. Yoga incorporates breathing exercises, meditation, and poses designed to encourage relaxation and reduce stress while improving flexibility and core strength.',
+    features: ['Mindfulness', 'Flexibility', 'Core Strength']
+  },
+  {
+    title: 'Archery',
+    image: '/assets/sports/image8.png',
+    description: 'The ancient art, practice, and skill of using a bow to shoot arrows. Archery requires intense focus, precision, patience, and steady physical control, making it an excellent sport for mental discipline.',
+    features: ['Precision & Focus', 'Patience', 'Upper Body Strength']
+  },
+  {
+    title: 'Skating',
+    image: '/assets/sports/image9.png',
+    description: 'A recreational activity and sport involving traveling on surfaces or ice using skates. It encompasses various disciplines like speed skating, figure skating, and roller skating, focusing on balance, speed, and agility.',
+    features: ['Balance & Coordination', 'Speed & Agility', 'Cardiovascular Endurance']
+  },
+  {
+    title: 'Kabaddi',
+    image: '/assets/sports/image10.png',
+    description: 'A highly intense contact team sport rooted in ancient Indian history. Kabaddi involves a "raider" entering the opposing team\'s half to tag them while holding their breath, requiring explosive speed, strength, and quick decision-making.',
+    features: ['Explosive Strength', 'Quick Reflexes', 'Team Coordination']
+  },
+  {
+    title: 'Volleyball',
+    image: '/assets/sports/image11.png',
+    description: 'A dynamic team sport where two teams are separated by a net. The objective is to score points by grounding a ball on the opponent\'s court. It builds teamwork, vertical jumping ability, and hand-eye coordination.',
+    features: ['Hand-Eye Coordination', 'Teamwork', 'Vertical Agility']
+  },
+  {
+    title: 'Kho Kho',
+    image: '/assets/sports/image12.png',
+    description: 'A traditional Indian tag game played by two teams. It is one of the oldest outdoor sports from the Indian subcontinent, heavily relying on chasing and evading skills. It builds immense stamina and sharp reflexes.',
+    features: ['Stamina Building', 'Evasive Agility', 'Tactical Thinking']
+  },
+  {
+    title: 'Hockey',
+    image: '/assets/sports/image13.png',
+    description: 'A fast-paced team sport played on a field (or ice) where players use curved sticks to drive a ball or puck into the opponent\'s goal. It demands incredible cardiovascular fitness, teamwork, and stick-handling skills.',
+    features: ['Stick Mastery', 'Cardiovascular Fitness', 'Team Strategy']
   }
 ];
 
@@ -67,7 +121,7 @@ export default function Sports() {
             animate={{ opacity: 1, y: 0 }}
             className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed"
           >
-            Explore our diverse range of martial arts programs, each designed to develop physical ability, mental focus, and character.
+            Explore our diverse range of sports and martial arts programs, each designed to develop physical ability, mental focus, and character.
           </motion.p>
         </div>
       </section>
