@@ -56,7 +56,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
 
           {/* Contact Info Cards */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-6 mt-5">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -105,7 +105,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-bold font-heading mb-2">Email Address</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-small">
                   harisportsacademy@gmail.com<br />
 
                 </p>
@@ -118,7 +118,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-3 bg-white p-8 md:p-12 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100"
+            className="lg:col-span-3 bg-white p-8 md:p-12 md:mt-24 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100"
           >
             <h2 className="text-3xl font-heading font-extrabold mb-8">Send a Message</h2>
 
@@ -184,7 +184,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
             className="group-hover:scale-105 transition-transform duration-1000 ease-in-out"
           ></iframe>
-          
+
           {/* Floating Label */}
           <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl shadow-xl border border-white/20 pointer-events-none">
             <div className="flex items-center gap-3">
