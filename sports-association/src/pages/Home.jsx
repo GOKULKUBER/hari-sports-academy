@@ -68,7 +68,7 @@ export default function Home() {
             {[
               { icon: Users, title: 'Become a Member', desc: 'Join our community of athletes, clubs, and coaches.', link: '/contact' },
               { icon: Calendar, title: 'Upcoming Events', desc: 'Discover and register for the latest tournaments.', link: '/events' },
-              { icon: GalleryThumbnails, title: 'Gallery', desc: 'Track images and official photos.', link: '/results' },
+              { icon: GalleryThumbnails, title: 'Gallery', desc: 'Explore official highlights and memorable moments.', link: '/gallery' },
             ].map((item, idx) => (
               <motion.div key={idx} variants={fadeIn} className="group p-8 rounded-3xl bg-gray-100 border border-gray-100 hover:bg-gray-150  hover:shadow-xl transition-all duration-300">
                 <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all">
