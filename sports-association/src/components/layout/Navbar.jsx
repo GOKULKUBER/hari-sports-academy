@@ -44,7 +44,7 @@ export default function Navbar() {
             </button>
             <Link to="/">
               <span className="font-heading font-bold text-2xl tracking-tight text-[#0000FE]">
-                Hari Sports <span className="text-secondary gap-2">Accademy</span>
+                Hari Sports <span className="text-secondary gap-2">Academy</span>
               </span>
             </Link>
           </div>

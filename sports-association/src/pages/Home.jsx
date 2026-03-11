@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <div className="w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-primary-dark overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 to-primary-dark/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <motion.div
@@ -31,7 +31,7 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl"
           >
-            <motion.span variants={fadeIn} className="inline-block py-1 px-3 rounded-full bg-secondary text-white font-semibold tracking-wide text-sm mb-6 shadow-md shadow-secondary/50">
+            <motion.span variants={fadeIn} className="inline-block py-1 px-3 rounded-full bg-secondary/80 text-white font-semibold tracking-wide text-sm mb-6 shadow-md shadow-secondary/50">
               Empowering Champions Since 2021
             </motion.span>
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-heading font-extrabold text-white mb-6 leading-tight">
@@ -40,11 +40,11 @@ export default function Home() {
                 Building Excellence.
               </span>
             </motion.h1>
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+            <motion.p variants={fadeIn} className="text-lg md:text-xl text-white mb-10 max-w-2xl leading-relaxed">
               Join the Hari sports academy dedicated to athletic development, elite competition, and community engagement.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link to="/registration" className="bg-secondary hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg shadow-secondary/30 hover:-translate-y-1">
+              <Link to="/registration" className="bg-secondary/85 hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg shadow-secondary/30 hover:-translate-y-1">
                 Register Now <ArrowRight className="w-5 h-5" />
               </Link>
               <Link to="/events" className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center gap-2 hover:-translate-y-1">
@@ -70,7 +70,7 @@ export default function Home() {
               { icon: Calendar, title: 'Upcoming Events', desc: 'Discover and register for the latest tournaments.', link: '/events' },
               { icon: Trophy, title: 'Results & Rankings', desc: 'Track performance and view official leaderboards.', link: '/results' },
             ].map((item, idx) => (
-              <motion.div key={idx} variants={fadeIn} className="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+              <motion.div key={idx} variants={fadeIn} className="group p-8 rounded-3xl bg-gray-100 border border-gray-100 hover:bg-gray-150  hover:shadow-xl transition-all duration-300">
                 <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all">
                   <item.icon className="w-8 h-8 text-primary group-hover:text-white" />
                 </div>
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* Latest News & Events */}
-      <section className="py-24 bg-gray-50">
+      {/* <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
@@ -105,7 +105,7 @@ export default function Home() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {/* News Card 1 */}
+          
             <motion.article variants={fadeIn} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1574629810360-7efbb1b040a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
             </motion.article>
 
-            {/* Event Card */}
+            
             <motion.article variants={fadeIn} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Training" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </motion.article>
 
-            {/* News Card 2 */}
+            
             <motion.article variants={fadeIn} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Achievement" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -154,20 +154,19 @@ export default function Home() {
             </motion.article>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsors Section */}
-      <section className="py-20 bg-white border-t border-gray-100">
+      {/* <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-10">Trusted by Official Partners</p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Sponsor Logos Placeholder */}
             {['Partner One', 'Global Sports', 'AthletiCo', 'Peak Gear'].map((sponsor, i) => (
               <h2 key={i} className="text-2xl md:text-3xl font-heading font-black text-gray-800">{sponsor}</h2>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

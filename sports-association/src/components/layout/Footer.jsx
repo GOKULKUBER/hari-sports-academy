@@ -7,15 +7,15 @@ export default function Footer() {
     <footer className="bg-primary-dark text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Brand & Intro */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="bg-white/10 p-2 rounded-lg">
-                <Trophy className="h-6 w-6 text-secondary" />
+              <div className="bg-white/10 p-1 rounded-lg flex items-center justify-center">
+                <img src="/assets/navbar/logo.jpeg" alt="Academy Logo" className="h-8 w-8 object-cover rounded" />
               </div>
               <span className="font-heading font-bold text-2xl tracking-tight text-white">
-                Sports<span className="text-secondary">Assoc</span>
+                Hari Sports<span className="text-secondary pl-2">Academy</span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Quick Links</h3>
             <ul className="space-y-3">
-              {['About Us', 'Events', 'Sports', 'Gallery', 'News', 'Contact'].map(item => (
+              {['About Us', 'Events', 'Sports', 'Gallery', 'Contact'].map(item => (
                 <li key={item}>
                   <Link to={`/${item.toLowerCase().replace(' ', '')}`} className="text-gray-400 hover:text-secondary transition-colors text-sm flex items-center before:content-['>'] before:mr-2 before:text-secondary before:font-bold">
                     {item}
@@ -55,7 +55,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6 border-b border-white/10 pb-2 inline-block">Resources</h3>
             <ul className="space-y-3">
-              {['Registration', 'Membership', 'Results', 'Coaches', 'Downloads', 'Sponsors'].map(item => (
+              {['Registration', 'Coaches', 'Sponsors'].map(item => (
                 <li key={item}>
                   <Link to={`/${item.toLowerCase()}`} className="text-gray-400 hover:text-secondary transition-colors text-sm flex items-center before:content-['>'] before:mr-2 before:text-secondary before:font-bold">
                     {item}
@@ -71,7 +71,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start text-gray-400 text-sm">
                 <MapPin className="h-5 w-5 mr-3 text-secondary shrink-0 mt-0.5" />
-                <span>123 Sports Avenue, Athletic District<br/>Metropolis, NY 10001</span>
+                <span>123 Sports Avenue, Athletic District<br />Metropolis, NY 10001</span>
               </li>
               <li className="flex items-center text-gray-400 text-sm">
                 <Phone className="h-5 w-5 mr-3 text-secondary shrink-0" />

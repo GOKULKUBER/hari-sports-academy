@@ -19,7 +19,7 @@ export default function About() {
   return (
     <div className="w-full">
       {/* Header Banner */}
-      <section className="bg-primary pt-24 pb-32 px-4 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40 pt-24 pb-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518605368461-1ee7e14f9d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-20 mix-blend-luminosity"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
         <div className="max-w-7xl mx-auto relative z-10 text-center">
@@ -28,7 +28,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-6xl font-heading font-extrabold text-white mb-6"
           >
-            About Our Association
+            About Our Academy
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ export default function About() {
       </section>
 
       {/* President Message */}
-      <section className="py-20 bg-primary-dark text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40 text-white relative overflow-hidden mb-5">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary transform skew-x-12 translate-x-32 opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -116,8 +116,8 @@ export default function About() {
                 <img src="/assets/about/hari.jpeg" alt="President" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-2xl shadow-xl">
-                <p className="font-bold text-lg">Robert Johnson</p>
-                <p className="text-sm">President, SportsAssoc</p>
+                <p className="font-bold text-lg">Hari</p>
+                <p className="text-sm">Founder , General Secretary</p>
               </div>
             </motion.div>
             <motion.div
@@ -130,7 +130,7 @@ export default function About() {
               <h2 className="text-4xl font-heading font-bold mb-6">A Message from the President</h2>
               <blockquote className="text-xl leading-relaxed text-gray-300 italic mb-8 relative">
                 <span className="text-6xl text-primary absolute -top-8 -left-6 opacity-50 font-serif">"</span>
-                Sport has the unique power to unite, inspire, and transform lives. Our association remains steadfast in its commitment to providing a platform where every athlete can discover their potential and achieve greatness. Together, we are building not just athletes, but leaders of tomorrow.
+                Sport has the unique power to unite, inspire, and transform lives. Our academy remains steadfast in its commitment to providing a platform where every athlete can discover their potential and achieve greatness. Together, we are building not just athletes, but leaders of tomorrow.
               </blockquote>
             </motion.div>
           </div>
