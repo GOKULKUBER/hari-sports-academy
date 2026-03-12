@@ -2,6 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Users, Trophy, ChevronRight, GalleryThumbnails } from 'lucide-react';
+import { InfiniteMovingCards } from '../components/ui/infinite-moving-cards';
+
+const galleryImages = [
+  { src: '/assets/gallery/image1.jpeg', alt: 'Gallery Image 1' },
+  { src: '/assets/gallery/image2.png', alt: 'Gallery Image 2' },
+  { src: '/assets/gallery/image3.png', alt: 'Gallery Image 3' },
+  { src: '/assets/gallery/image4.jpeg', alt: 'Gallery Image 4' },
+  { src: '/assets/gallery/image5.jpeg', alt: 'Gallery Image 5' },
+  { src: '/assets/gallery/image6.jpeg', alt: 'Gallery Image 6' },
+  { src: '/assets/gallery/image7.jpeg', alt: 'Gallery Image 7' },
+  { src: '/assets/gallery/image8.png', alt: 'Gallery Image 8' },
+  { src: '/assets/gallery/image9.jpeg', alt: 'Gallery Image 9' },
+];
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -52,6 +65,26 @@ export default function Home() {
               </Link>
             </motion.div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="text-center">
+            <h2 className="text-4xl font-heading font-bold text-gray-900">Our Gallery</h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              Glimpses of our intense training sessions, thrilling matches, and glorious victories.
+            </p>
+          </div>
+        </div>
+        
+        <div className="flex flex-col antialiased items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={galleryImages}
+            direction="left"
+            speed="slow"
+          />
         </div>
       </section>
 
