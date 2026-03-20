@@ -10,24 +10,24 @@ const EVENTS = [
 
 export default function Events() {
   const [filter, setFilter] = useState('All');
-  
+
   const categories = ['All', 'Tournament', 'Training'];
   const filteredEvents = filter === 'All' ? EVENTS : EVENTS.filter(e => e.category === filter);
 
   return (
     <div className="w-full bg-gray-50 min-h-screen pb-20">
-      
+
       {/* Header */}
-      <section className="bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40 text-white pt-24 pb-16 px-4">
+      <section className="bg-gradient-to-r from-[#0000FE]/70 to-red-500/70 text-white pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-heading font-extrabold mb-6"
           >
             Events & Tournaments
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -40,7 +40,7 @@ export default function Events() {
 
       {/* Filter and List */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 relative z-10">
-        
+
         {/* Filters */}
         <div className="bg-white rounded-2xl shadow-md p-4 mb-10 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center text-gray-500 font-medium">
@@ -49,7 +49,7 @@ export default function Events() {
           </div>
           <div className="flex flex-wrap gap-2">
             {categories.map(c => (
-              <button 
+              <button
                 key={c}
                 onClick={() => setFilter(c)}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${filter === c ? 'bg-secondary text-primary-dark shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
@@ -63,7 +63,7 @@ export default function Events() {
         {/* Events Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
           {filteredEvents.map((ev, i) => (
-            <motion.div 
+            <motion.div
               key={ev.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export default function Events() {
                 <img src={ev.image} alt={ev.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 left-4 sm:hidden bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">{ev.category}</div>
               </div>
-              
+
               <div className="p-6 sm:w-3/5 flex flex-col justify-between">
                 <div>
                   <div className="hidden sm:inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
@@ -96,7 +96,7 @@ export default function Events() {
                     </div>
                   </div>
                 </div>
-                <a 
+                <a
                   href={ev.locationUrl}
                   target="_blank"
                   rel="noopener noreferrer"

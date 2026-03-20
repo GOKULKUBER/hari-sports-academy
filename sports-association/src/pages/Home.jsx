@@ -35,7 +35,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0000FE]/70 to-red-500/70"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <motion.div
@@ -49,7 +49,7 @@ export default function Home() {
             </motion.span>
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-heading font-extrabold text-white mb-6 leading-tight">
               Fueling Passion.<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-red-400">
+              <span className="text-white">
                 Building Excellence.
               </span>
             </motion.h1>
@@ -78,7 +78,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        
+
         <div className="flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={galleryImages}

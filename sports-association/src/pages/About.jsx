@@ -19,9 +19,9 @@ export default function About() {
   return (
     <div className="w-full">
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40 pt-24 pb-32 px-4 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#0000FE]/70 to-red-500/70 pt-24 pb-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518605368461-1ee7e14f9d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-20 mix-blend-luminosity"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0000FE]/70 to-red-500/70"></div>
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

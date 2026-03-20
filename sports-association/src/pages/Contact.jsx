@@ -33,7 +33,7 @@ export default function Contact() {
     <div className="w-full bg-gray-50 bg-pattern min-h-screen">
 
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-[#0506E4]/90 to-[#0506E4]/40 text-white pt-20 pb-20 px-4 text-center">
+      <section className="bg-gradient-to-r from-[#0000FE]/70 to-red-500/70 text-white pt-20 pb-20 px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

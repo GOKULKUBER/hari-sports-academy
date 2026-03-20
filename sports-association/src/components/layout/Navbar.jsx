@@ -45,8 +45,8 @@ export default function Navbar() {
               <img src="/assets/navbar/logo.jpeg" alt="Sports Association Logo" className="h-10 w-auto object-contain rounded shadow-sm" />
             </button>
             <Link to="/">
-              <span className="font-heading font-bold text-2xl tracking-tight text-[#0000FE]">
-                Hari Sports <span className="text-secondary gap-2">Academy</span>
+              <span className="font-heading font-bold text-2xl tracking-tight bg-gradient-to-r from-[#0000FE] to-red-500 bg-clip-text text-transparent">
+                Hari Sports Academy
               </span>
             </Link>
           </div>
